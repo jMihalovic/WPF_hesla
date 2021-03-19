@@ -1,0 +1,29 @@
+﻿<Window x:Class="WPF_hesla.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_hesla"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="TextJmeno" Grid.Column="2" Text="Zde zadej jméno"/>
+        <TextBox x:Name="TextHeslo" Grid.Column="2" Grid.Row="1" Text="Zde zadej heslo"/>
+        <Button x:Name="But1" Grid.Column="2" Grid.Row="2" Click="But1_Click" Content="Zadej"/>
+        <Button x:Name="ButVypni" Grid.Column="4" Grid.Row="2" Content="Vypnout" Visibility="Hidden" Click="ButVypni_Click" />
+        <TextBlock x:Name="TextVypis" Grid.Column="2" Grid.Row="3"/>
+    </Grid>
+</Window>
